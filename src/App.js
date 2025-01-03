@@ -1,13 +1,24 @@
 
 import './App.css';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import About from './components/pages/About';
+import Home from './components/pages/home';
+import Ourservices from './components/pages/Ourservices'
 
 function App() {
   return (
     <div className="App">
       <div>
-        <h1 className='text-neutral-200 text-3xl bg-inherit'>Tail wind css aplied in react application</h1>
-      </div>
+        <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path='about' element={<About/>}/>
+          <Route path='ourServices' element={<Ourservices/>}/>
+        </Routes>
+        </BrowserRouter>
       
+      </div>
+
     </div>
   );
 }
