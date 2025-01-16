@@ -21,51 +21,53 @@ export default function ContacyForm(){
     return(
         <div className="1/2 flex flex-col items-center justify-center bg-slate-100">
             <form action="" className="w-3/6 flex flex-col items-center gap-8" onSubmit={handleClick}>
-            <h1>Send us a Message@{headingText}</h1>
+            <h1 className="font-bold">Send us a Message@{headingText}</h1>
             <div className="w-full flex justify-center gap-6">
             <div className=" flex flex-col gap-2 ">
                 <div className="flex flex-col items-start border border-transparent hover:border-blue-700">
-                <label htmlFor="">your name</label>
+                <label className="font-semibold text-sm" htmlFor="">your name</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="" placeholder="enter your full name"onChange={handleChange} value={name}/>
                 </div>
-                <div className="flex flex-col items-start">
-                <label htmlFor="">Phone number</label>
+                <div className="flex flex-col items-start border border-transparent hover:border-blue-500">
+                <label className="font-semibold text-sm" htmlFor="">Phone number</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="" placeholder="enter your full name"onChange={handleChange} value={name}/>
                 </div>
-                <div className="flex flex-col items-start">
-                <label htmlFor="">your company name</label>
+                <div className="flex flex-col items-start border border-transparent hover:border-blue-500">
+                <label className="font-semibold text-sm" htmlFor="">your company name</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="" placeholder="your campany name"onChange={handleChange} value={name}/>
                 </div>
-                <div className="flex flex-col items-start ">
-                <label htmlFor="">Tarpaulin size</label>
+                <div className="flex flex-col items-start border border-transparent hover:border-blue-500 ">
+                <label className="font-semibold text-sm" htmlFor="">Tarpaulin size</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="" placeholder="tarpaulin size" onChange={handleChange} value={name}/>
                 </div>
                 </div>
                 
-                <div className=" flex flex-col gap-2">
-                <div className="flex flex-col items-start">
-                <label htmlFor="">Email</label>
+                <div className=" flex flex-col gap-2 ">
+                <div className="flex flex-col items-start border border-transparent hover:border-blue-500">
+                <label className="font-semibold text-sm" htmlFor="">Email</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="text" placeholder="enter your email"/>
                 </div>
-                <div className="flex flex-col  items-start">
-                <label htmlFor="">phone</label>
+                <div className="flex flex-col  items-start border border-transparent hover:border-blue-500">
+                <label className="font-semibold text-sm" htmlFor="">phone</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="text"  placeholder="your phone number" />
                 </div>
-                <div className="flex flex-col items-start">
-                <label htmlFor="">phone</label>
+                <div className="flex flex-col items-start border border-transparent hover:border-blue-500">
+                <label className="font-semibold text-sm" htmlFor="">phone</label>
                 <input className="h-8 border border-gray-300 rounded-lg" type="text"  placeholder="your phone number" />
                 </div>
-                <div className="flex flex-col items-start">
-                <label htmlFor="">phone</label>
+                <div className="flex flex-col items-start border border-transparent hover:border-blue-500">
+                <label className="font-semibold text-sm" htmlFor="">phone</label>
                 <input className="h-8 border border-transparent border-gray-300 rounded-lg" type="text"  placeholder="your phone number" />
                 </div>
                 </div>
 
             </div>
+                <div className="w-1/2 border border-transparent hover:border-blue-500">
+                <input className="w-full h-28 rounded-lg border hover:border-transparent resize-none" type="textarea" placeholder="comments"  />
+                </div>
                 
-                <input className="w-1/2 h-28 rounded-lg" type="textarea" placeholder="comments"  />
                 
-                <button onClick={handleClick}>Submit</button>
+                <button className="w-1/2 bg-blue-500" onClick={handleClick}>send Message</button>
             </form>
         </div>
     );
