@@ -1,7 +1,7 @@
 // import { trigger } from "browser-router/html5-history/adapter";
 import React, { useState } from "react";
 
-
+import Googlemap from "./google_map";
 
 export default function ContacyForm(){
 
@@ -19,7 +19,12 @@ export default function ContacyForm(){
         alert("the Form submitted successfully")
     }
     return(
-        <div className="1/2 flex flex-col items-center justify-center bg-slate-100">
+        
+        
+        <div className="flex flex items-center justify-center bg-slate-100 bg-blue-500">
+            <div>
+             <Googlemap/>
+            </div>
             <form action="" className="w-3/6 flex flex-col items-center gap-8" onSubmit={handleClick}>
             <h1 className="font-bold">Send us a Message@{headingText}</h1>
             <div className="w-full flex justify-center gap-6">
@@ -62,8 +67,8 @@ export default function ContacyForm(){
                 </div>
 
             </div>
-                <div className="w-1/2 border border-transparent hover:border-blue-500">
-                <input className="w-full h-28 rounded-lg border hover:border-transparent resize-none" type="textarea" placeholder="comments"  />
+                <div className="w-1/2 border border-transparent hover:border-blue-500 rounded-xld">
+                <textarea className="w-full h-28 rounded-lg border-none focus:outline-none focus:border-transparent p-2" placeholder="comments"  />
                 </div>
                 
                 
