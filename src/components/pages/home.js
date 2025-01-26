@@ -8,7 +8,7 @@ import AboutCotras from "../about/About_Cotras";
 import Footer from "../footer/footer";
 function home() {
   return (
-    <div className="flex flex-col md:flex">
+    <div className="flex flex-col items-center">
       <HomeCollection/>
       <BenefitTitle/>
       <Rates/>
