@@ -11,7 +11,7 @@ function home_collection() {
         <div className='flex flex-col gap-6 items-center font-serif text-xl sm:text-3xl text-slate-950'>
             <h1 className='w-80'>Tailored service to meet your talpoulin needs</h1>
             <p className='text-lg text-gray-500 sm:text-xl'>Buy tarps at affordable price!</p>
-            <button className='w-32 text-xl h-8 rounded-xl bg-blue-500 font-serif'>enquire now</button>
+            <button className='w-52 h-10 text-xl rounded-xl bg-blue-500 font-serif'>enquire now</button>
         </div>
         <div className='flex flex-col gap-7 sm:flex-row '>
             {Product_data.map((item,i)=>{
